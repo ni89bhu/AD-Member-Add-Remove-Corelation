@@ -23,7 +23,7 @@ $db = "$scriptdir\Data\memadd.csv"
 $et = get-date -Format G
 
 #######################################################################################################################################
-$regex = '(?s)Subject\:.*?Account Name\:\s+(.*?)Account Domain\:.*?Member\:.*?Account Name\:\s+(.*?)Group\:.*?Group Name\:\s+(.*?)Group Domain\:'
+$regex = '(?s)Subject\:.*?Account Name\:\s+(.*?)Account Domain\:.*?Member\:.*?Account Name\:\s+(.*?)Group\:.*?Account Name\:\s+(.*?)Account Domain\:'
 Filter Extract
 {
 $_ -match $regex > $null
